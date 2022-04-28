@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1457a7106a6457f46b7f447264ba4085, type: 3}
+  m_Name: SaveSystem
+  m_EditorClassIdentifier: 
+  currentSaveFileName: SaveFile1
+  gameDataObjects:
+  - {fileID: 11400000, guid: cc35dc333b161d34b853db66dc39aaa4, type: 2}
+  SAVE_DIRECTORY_PATH: C:/Users/jeffr/AppData/LocalLow/DefaultCompany/Temp0\saves
+  SAVE_FILE_EXTENSION: .save
+  OnSaveError:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLoadError:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 43a1ca341d6ff9445b74c7d8ddd55e74, type: 2}
+        m_TargetAssemblyTypeName: StringGameEvent, Assembly-CSharp
+        m_MethodName: Raise
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
