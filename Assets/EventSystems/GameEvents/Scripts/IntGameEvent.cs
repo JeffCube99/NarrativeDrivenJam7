@@ -6,7 +6,7 @@ using UnityEngine;
 
 // The CreateAssetMenu attribute allows us to create scriptable object assets in the editor
 // In the Editor: Right Click > Create > ScriptableObjects > IntGameEvent
-[CreateAssetMenu(fileName = "New IntGameEvent", menuName = "ScriptableObjects/IntGameEvent")]
+[CreateAssetMenu(fileName = "New IntGameEvent", menuName = "ScriptableObjects/Events/IntGameEvent")]
 public class IntGameEvent : GameEvent
 {
     public void Raise(int data)

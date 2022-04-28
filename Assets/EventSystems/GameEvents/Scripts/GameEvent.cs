@@ -7,7 +7,7 @@ using UnityEngine;
 
 // The CreateAssetMenu attribute allows us to create scriptable object assets in the editor
 // In the Editor: Right Click > Create > ScriptableObjects > GameEvent
-[CreateAssetMenu(fileName = "New GameEvent", menuName = "ScriptableObjects/GameEvent")]
+[CreateAssetMenu(fileName = "New GameEvent", menuName = "ScriptableObjects/Events/GameEvent")]
 public class GameEvent : ScriptableObject
 {
     private readonly List<GameEventListener> eventListeners = new List<GameEventListener>();
