@@ -9,10 +9,10 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
 
     public void OnDrop(PointerEventData eventData)
     {
-        if (eventData.pointerDrag != null)
+        Draggable draggable = eventData.pointerDrag.GetComponent<Draggable>();
+        if (draggable != null)
         {
-            eventData.pointerDrag.transform.position = transform.position;
-            eventData.pointerDrag.transform.rotation = transform.rotation;
+            draggable.transform.SetParent(transform);
         }
         DropPreview.SetActive(false);
     }
