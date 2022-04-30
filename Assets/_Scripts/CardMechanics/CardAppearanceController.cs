@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
-public class CardAppearanceController : MonoBehaviour
+public class CardAppearanceController : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private Card card;
     [SerializeField] private TextMeshProUGUI titleText;
@@ -16,6 +17,16 @@ public class CardAppearanceController : MonoBehaviour
     private Vector3 lastPosition;
     private Vector3 dampedVelocity;
     private Vector3 acceleration = Vector3.zero;
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        cardAnimator.SetBool("isMouseOver", true);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        cardAnimator.SetBool("isMouseOver", false);
+    }
 
     private void Start()
     {
@@ -35,7 +46,6 @@ public class CardAppearanceController : MonoBehaviour
         lastPosition = transform.position;
         Vector3 targetVelocity = positionDelta / Time.deltaTime / maximumTiltVelocity;
         dampedVelocity = Vector3.SmoothDamp(dampedVelocity, targetVelocity, ref acceleration, m_MovementSmoothing);
-        Debug.Log(dampedVelocity);
         cardAnimator.SetFloat("x_velocity", dampedVelocity.x);
         cardAnimator.SetFloat("y_velocity", dampedVelocity.y);
     }
