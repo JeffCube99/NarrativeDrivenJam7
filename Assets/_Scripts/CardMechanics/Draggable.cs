@@ -13,6 +13,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDra
     private Vector3 mouseOffset;
     private float mouseDepth;
     private int defaultLayer;
+    [SerializeField] private GameObject colliderGameObject;
 
     [Range(0.1f, 1f)] [SerializeField] private float lerpSpeed;
     public UnityEvent<GameObject> OnObjectPickedUp;
@@ -20,7 +21,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDra
 
     private void Start()
     {
-        defaultLayer = gameObject.layer;
+        defaultLayer = colliderGameObject.layer;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -35,7 +36,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDra
 
         // Object should ignore raycast when dragged so raycasts can hit things behind the card
         int layerNumber = LayerMask.NameToLayer("Ignore Raycast");
-        gameObject.layer = layerNumber;
+        colliderGameObject.layer = layerNumber;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -47,7 +48,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDra
     public void OnEndDrag(PointerEventData eventData)
     {
         // Debug.Log("OnEndDrag");
-        gameObject.layer = defaultLayer;
+        colliderGameObject.layer = defaultLayer;
         OnObjectReleased.Invoke();
         StopAllCoroutines();
         StartCoroutine(MoveToReturnPosition());

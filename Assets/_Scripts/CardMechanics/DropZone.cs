@@ -1,18 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private GameObject DropPreview;
+    [SerializeField] private Transform dropTransform;
+
+    public UnityEvent<Card> OnCardDropped;
+    public UnityEvent<CardComponent> OnCardComponentDropped;
 
     public void OnDrop(PointerEventData eventData)
     {
         Draggable draggable = eventData.pointerDrag.GetComponent<Draggable>();
         if (draggable != null)
         {
-            draggable.transform.SetParent(transform);
+            draggable.transform.SetParent(dropTransform);
+            CardComponent cardComponent = eventData.pointerDrag.GetComponent<CardComponent>();
+            if (cardComponent != null)
+            {
+                OnCardDropped.Invoke(cardComponent.card);
+                OnCardComponentDropped.Invoke(cardComponent);
+            }
         }
         DropPreview.SetActive(false);
     }
