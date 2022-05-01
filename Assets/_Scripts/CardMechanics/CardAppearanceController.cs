@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
 
-public class CardAppearanceController : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class CardAppearanceController : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IDragHandler, IEndDragHandler, IBeginDragHandler
 {
     [SerializeField] private Card card;
     [SerializeField] private TextMeshProUGUI titleText;
@@ -17,18 +17,21 @@ public class CardAppearanceController : MonoBehaviour, IPointerEnterHandler, IPo
     private Vector3 lastPosition;
     private Vector3 dampedVelocity;
     private Vector3 acceleration = Vector3.zero;
-
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        cardAnimator.SetBool("isMouseOver", true);
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        cardAnimator.SetBool("isMouseOver", false);
-    }
+    [SerializeField] private bool isMouseOver;
+    [SerializeField] private bool isBeingDragged;
+    [SerializeField] private bool isPlayed;
 
     private void Start()
+    {
+        ResetCardAppearance();
+    }
+
+    private void OnEnable()
+    {
+        ResetCardAppearance();
+    }
+
+    private void ResetCardAppearance()
     {
         if (card != null)
         {
@@ -38,6 +41,69 @@ public class CardAppearanceController : MonoBehaviour, IPointerEnterHandler, IPo
         }
 
         lastPosition = transform.position;
+        isMouseOver = false;
+        isBeingDragged = false;
+        isPlayed = false;
+
+        SetGrowAnimation();
+        SetPlayedAnimation();
+    }
+
+    public void OnCardPlayed()
+    {
+        Debug.Log("Card has been played");
+        isPlayed = true;
+        SetPlayedAnimation();
+    }
+
+    public void OnCardPlayedAnimationFinished()
+    {
+        gameObject.SetActive(false);
+    }
+
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+        isBeingDragged = true;
+        SetGrowAnimation();
+    }
+
+    public void OnDrag(PointerEventData eventData)
+    {
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        isBeingDragged = false;
+        SetGrowAnimation();
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        isMouseOver = true;
+        SetGrowAnimation();
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        isMouseOver = false;
+        SetGrowAnimation();
+    }
+
+    private void SetGrowAnimation()
+    {
+        if (isMouseOver == true && isBeingDragged == false)
+        {
+            cardAnimator.SetBool("shouldGrow", true);
+        }
+        else
+        {
+            cardAnimator.SetBool("shouldGrow", false);
+        }
+    }
+
+    private void SetPlayedAnimation()
+    {
+        cardAnimator.SetBool("isPlayed", isPlayed);
     }
 
     private void Update()

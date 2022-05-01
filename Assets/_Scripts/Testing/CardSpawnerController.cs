@@ -20,7 +20,7 @@ public class CardSpawnerController : MonoBehaviour
             Debug.Log("Spawning Card!");
             ObjectPool cardObjectPool = cardObjectPools[Random.RandomRange(0, cardObjectPools.Count)];
             GameObject card = cardObjectPool.Instantiate(Vector3.zero, Quaternion.identity);
-            handManager.OnCardAddedToHand(card);
+            handManager.AddCardToHand(card);
             spawnedGameObjects.Add(card);
         }
     }
@@ -32,7 +32,6 @@ public class CardSpawnerController : MonoBehaviour
             spawnedGameObjects[0].transform.parent = null;
             Destroy(spawnedGameObjects[0]);
             spawnedGameObjects.RemoveAt(0);
-            handManager.OnCardRemovedFromHand();
         }
     }
 }

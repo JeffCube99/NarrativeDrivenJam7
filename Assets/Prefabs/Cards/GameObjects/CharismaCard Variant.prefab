@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2282397536324993876, guid: 70a7de7fb6746f84d93e1b42787b3e73, type: 3}
       propertyPath: m_Name
-      value: CharismaCard
+      value: CharismaCard Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2282397536324993879, guid: 70a7de7fb6746f84d93e1b42787b3e73, type: 3}
       propertyPath: m_RootOrder
@@ -56,6 +56,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3029733934720071750, guid: 70a7de7fb6746f84d93e1b42787b3e73, type: 3}
+      propertyPath: card
+      value: 
+      objectReference: {fileID: 11400000, guid: 580d2e301ea5af74eb5eb5c9212d2128, type: 2}
+    - target: {fileID: 4520122708126737951, guid: 70a7de7fb6746f84d93e1b42787b3e73, type: 3}
       propertyPath: card
       value: 
       objectReference: {fileID: 11400000, guid: 580d2e301ea5af74eb5eb5c9212d2128, type: 2}
