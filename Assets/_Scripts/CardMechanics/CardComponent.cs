@@ -8,7 +8,7 @@ public class CardComponent : MonoBehaviour
     public Card card;
     public UnityEvent onCardPlayed;
 
-    public void PlayCard()
+    public void OnCardPlayed()
     {
         onCardPlayed.Invoke();
     }

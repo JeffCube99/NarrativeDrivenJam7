@@ -184,6 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DropPreview: {fileID: 3460865455096211930}
+  DropAppearance: {fileID: 3460865456381902932}
   dropTransform: {fileID: 3460865455490672290}
   OnCardDropped:
     m_PersistentCalls:

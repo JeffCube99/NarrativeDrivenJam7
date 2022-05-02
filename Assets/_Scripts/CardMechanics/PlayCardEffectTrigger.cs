@@ -6,6 +6,6 @@ public class PlayCardEffectTrigger : MonoBehaviour
 {
     public void TriggerPlayCardEffect(CardComponent cardComponent)
     {
-        cardComponent.PlayCard();
+        cardComponent.OnCardPlayed();
     }
 }

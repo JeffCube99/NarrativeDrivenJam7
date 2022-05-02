@@ -14,18 +14,47 @@ public class Draggable : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDra
     private float mouseDepth;
     private int defaultLayer;
     [SerializeField] private GameObject colliderGameObject;
+    private bool canBeDragged;
 
     [Range(0.1f, 1f)] [SerializeField] private float lerpSpeed;
     public UnityEvent<GameObject> OnObjectPickedUp;
     public UnityEvent OnObjectReleased;
 
-    private void Start()
+    private void ResetDraggable()
     {
         defaultLayer = colliderGameObject.layer;
+        EnableDrag();
+    }
+
+    private void Start()
+    {
+        ResetDraggable();
+    }
+
+    private void OnEnable()
+    {
+        ResetDraggable();
+    }
+
+    public void DisableDrag()
+    {
+        canBeDragged = false;
+        OnObjectReleased.Invoke();
+        StopAllCoroutines();
+        StartCoroutine(MoveToReturnPosition());
+    }
+
+    public void EnableDrag()
+    {
+        canBeDragged = true;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        if (!canBeDragged)
+        {
+            return;
+        }
         StopAllCoroutines();
         StartCoroutine(RotateToUpPosition());
         // Debug.Log("OnBeginDrag");
@@ -41,6 +70,10 @@ public class Draggable : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDra
 
     public void OnDrag(PointerEventData eventData)
     {
+        if (!canBeDragged)
+        {
+            return;
+        }
         Vector3 mouseWorldPosition = MouseUtilities.GetMouseWorldPosition(mouseDepth);
         transform.position = mouseWorldPosition + mouseOffset;
     }
