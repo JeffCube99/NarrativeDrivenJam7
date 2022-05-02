@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bb7f8486deb11f43952b3dd23a71b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardDropZone: {fileID: 0}
 --- !u!114 &8838498702339074335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,6 +65,22 @@ MonoBehaviour:
         - m_Target: {fileID: 8838498702339074332}
           m_TargetAssemblyTypeName: CardGameManager, Assembly-CSharp
           m_MethodName: OnCardPlayed
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - Event: {fileID: 11400000, guid: 488f453ece3995545b85746c1cb927ec, type: 2}
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8838498702339074332}
+          m_TargetAssemblyTypeName: CardGameManager, Assembly-CSharp
+          m_MethodName: OnCardChoiceSceneBegin
           m_Mode: 0
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
