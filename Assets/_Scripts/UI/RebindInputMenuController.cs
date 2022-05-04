@@ -57,6 +57,7 @@ public class RebindInputMenuController : MonoBehaviour
 
 }
 
+#if UNITY_EDITOR
 [CustomEditor(typeof(RebindInputMenuController))]
 public class customRebindInputMenuControllerInspector : Editor
 {
@@ -83,3 +84,4 @@ public class customRebindInputMenuControllerInspector : Editor
         }
     }
 }
+#endif
