@@ -44,7 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bb7f8486deb11f43952b3dd23a71b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardDropZone: {fileID: 0}
+  dropZoneAppearanceController: {fileID: 0}
+  playerHandAppearanceController: {fileID: 0}
 --- !u!114 &8838498702339074335
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d869fedf5df8d8544aa8404012024b83, type: 3}
+  m_Name: Squirrel_Start_A_KI_0
+  m_EditorClassIdentifier: 
+  conversation:
+    dialogues:
+    - character: {fileID: 11400000, guid: a43ffaba8e4e9d4408f92605808bc758, type: 2}
+      sentences:
+      - Sorry, didn't mean to scare ya.
+    - character: {fileID: 11400000, guid: da520a298ab134145a0bb513748c4dea, type: 2}
+      sentences:
+      - 'Oh no worries. '
+      - What brings you out here?
+    - character: {fileID: 11400000, guid: a43ffaba8e4e9d4408f92605808bc758, type: 2}
+      sentences:
+      - I am on a quest to fix the polluted water.
+    - character: {fileID: 11400000, guid: 22d3221cc92dc9147832bc044e5c41f8, type: 2}
+      sentences:
+      - The Squirrel Appears Intrigued.
+  conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
+  nextScene: {fileID: 11400000, guid: 3820d4e68cc7cac4aa6de2a7cb0bf5d9, type: 2}
+  closeDialogueBoxOnFinish: 0

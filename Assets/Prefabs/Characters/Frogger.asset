@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterSprite: {fileID: 21300000, guid: f6110db56c1377046a322e2e7ed39d93, type: 3}
   characterName: Frogger
+  characterSpeakingEvent: event:/sfx/frog_lines

@@ -4,3 +4,5 @@
 <a href="https://www.flaticon.com/free-icons/famous" title="famous icons">Famous icons created by Wichai.wi - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/idea" title="idea icons">Idea icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/kindness" title="kindness icons">Kindness icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/squirrel" title="squirrel icons">Squirrel icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/story" title="story icons">Story icons created by Talha Dogar - Flaticon</a>

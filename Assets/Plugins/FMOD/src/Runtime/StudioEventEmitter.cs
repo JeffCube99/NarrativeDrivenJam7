@@ -34,6 +34,12 @@ namespace FMODUnity
 
         public bool IsActive { get; private set; }
 
+        public void ChangeEvent(string newEvent)
+        {
+            Event = newEvent;
+            Lookup();
+        }
+
         public float MaxDistance
         {
             get

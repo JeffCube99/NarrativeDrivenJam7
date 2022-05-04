@@ -9,6 +9,7 @@ public class ConversationScene : BaseScene
     public Conversation conversation;
     public ConversationSceneEvent conversationEvent;
     public BaseScene nextScene;
+    public bool closeDialogueBoxOnFinish;
 
     public override void StartScene()
     {

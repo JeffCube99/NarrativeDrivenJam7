@@ -17,5 +17,9 @@ MonoBehaviour:
     - character: {fileID: 11400000, guid: 825fc7ed3b7b5fd47bc9f93000a98218, type: 2}
       sentences:
       - Give me another card to tell your fortune again!
+    - character: {fileID: 11400000, guid: a43ffaba8e4e9d4408f92605808bc758, type: 2}
+      sentences:
+      - Ok. But which one?
   conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
   nextScene: {fileID: 11400000, guid: 30c4d2224abf7b74a973d0bc697bc116, type: 2}
+  closeDialogueBoxOnFinish: 0
