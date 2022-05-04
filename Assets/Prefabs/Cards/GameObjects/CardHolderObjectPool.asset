@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: CardHolderObjectPool
   m_EditorClassIdentifier: 
   prefab: {fileID: 198767853109065209, guid: 10d0edcbc7a7c5243b37c3bb37c1a3f7, type: 3}
-  maxObjects: 10
+  maxObjects: 20

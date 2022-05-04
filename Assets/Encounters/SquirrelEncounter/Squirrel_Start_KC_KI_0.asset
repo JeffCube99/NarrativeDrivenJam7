@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d869fedf5df8d8544aa8404012024b83, type: 3}
+  m_Name: Squirrel_Start_KC_KI_0
+  m_EditorClassIdentifier: 
+  conversation:
+    dialogues:
+    - character: {fileID: 11400000, guid: a43ffaba8e4e9d4408f92605808bc758, type: 2}
+      sentences:
+      - I am on a journey to save my village! The water has become polluted and my
+        people are sick. I seek to find the source of this disaster and fix it.
+    - character: {fileID: 11400000, guid: da520a298ab134145a0bb513748c4dea, type: 2}
+      sentences:
+      - Oh yes! I've noticed some of the trees I've planted near the shore look more
+        sick than they have been in the past.
+      - It would be great if we could fix whatever is happening.
+  conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
+  nextScene: {fileID: 11400000, guid: c821496e665336e4c8dd6cf09d22df4a, type: 2}
+  closeDialogueBoxOnFinish: 0

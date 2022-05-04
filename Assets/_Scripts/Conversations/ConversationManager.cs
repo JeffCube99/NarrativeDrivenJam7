@@ -5,6 +5,7 @@ using UnityEngine;
 public class ConversationManager : MonoBehaviour
 {
     [SerializeField] private DialogueManager dialogueManager;
+    [SerializeField] private DialogueAppearanceManager dialogueAppearanceManager;
     private Queue<Dialogue> dialogues;
     private ConversationScene currentConversationScene;
 
@@ -15,6 +16,7 @@ public class ConversationManager : MonoBehaviour
 
     public void OnConversationSceneBegin(object data)
     {
+        dialogueAppearanceManager.ShowDialogueBox();
         currentConversationScene = (ConversationScene)data;
         StartConversation(currentConversationScene.conversation);
     }
@@ -50,6 +52,10 @@ public class ConversationManager : MonoBehaviour
     {
         if (currentConversationScene != null)
         {
+            if (currentConversationScene.closeDialogueBoxOnFinish)
+            {
+                dialogueAppearanceManager.HideDialogueBox();
+            }
             currentConversationScene.EndScene();
         }
     }

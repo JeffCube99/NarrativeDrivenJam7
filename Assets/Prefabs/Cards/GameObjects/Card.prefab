@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2282397534400074665}
   - component: {fileID: 2282397534400074667}
   - component: {fileID: 2282397534400074664}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: TitleText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 2282397535178068124}
   - component: {fileID: 2282397535178068126}
   - component: {fileID: 2282397535178068127}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 2282397535230187346}
   - component: {fileID: 2282397535230187347}
   - component: {fileID: 2282397535230187348}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: CardBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 2282397535387914345}
   - component: {fileID: 2282397535387914358}
   - component: {fileID: 2282397535387914346}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: CardFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -449,7 +449,7 @@ GameObject:
   - component: {fileID: 2282397535417334690}
   - component: {fileID: 2282397535417334692}
   - component: {fileID: 2282397535417334693}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: DescriptionText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -588,7 +588,7 @@ GameObject:
   - component: {fileID: 2282397535492495143}
   - component: {fileID: 2282397535492495140}
   - component: {fileID: 2282397535492495141}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: CardImageMask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -677,7 +677,7 @@ GameObject:
   - component: {fileID: 2282397536095143134}
   - component: {fileID: 2282397536095143120}
   - component: {fileID: 2282397536095143121}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: CardImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -752,7 +752,7 @@ GameObject:
   - component: {fileID: 2282397536312282291}
   - component: {fileID: 2282397536312282293}
   - component: {fileID: 2282397536312282290}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -831,7 +831,9 @@ GameObject:
   - component: {fileID: 2863319703135638449}
   - component: {fileID: 3516983837100657012}
   - component: {fileID: 6354410463627602403}
-  m_Layer: 0
+  - component: {fileID: -437756194918159747}
+  - component: {fileID: -2665804871159339926}
+  m_Layer: 6
   m_Name: Card
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1007,6 +1009,38 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -437756194918159747}
+          m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 6
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: -2665804871159339926}
+          m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &6354410463627602403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1030,6 +1064,52 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
+--- !u!114 &-437756194918159747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2282397536324993876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/sfx/card_hover
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &-2665804871159339926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2282397536324993876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/sfx/card_down
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &8682947471262788982
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,7 +1120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7230097785565740374}
   - component: {fileID: 7862807982257185850}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CardImageParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}

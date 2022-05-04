@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterSprite: {fileID: 21300000, guid: 29c622ec6cdeef24c969f2fb6c7f0bc9, type: 3}
   characterName: Marty Mc Fly
+  characterSpeakingEvent: event:/sfx/bees_lines

@@ -12,7 +12,7 @@ public class PlayerCardHandManager : MonoBehaviour
 
     private List<GameObject> fullCardHolders;
 
-    private void Start()
+    private void Awake()
     {
         fullCardHolders = new List<GameObject>();
     }

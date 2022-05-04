@@ -6,15 +6,5 @@ using UnityEngine;
 
 public class PlayerState : ScriptableObject
 {
-    public GameObject grabbedObject;
-
-    private void OnEnable()
-    {
-        grabbedObject = null;
-    }
-
-    private void OnDisable()
-    {
-        grabbedObject = null;
-    }
+    public List<Card> cardsInHand;
 }

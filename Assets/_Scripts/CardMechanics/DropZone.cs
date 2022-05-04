@@ -4,10 +4,8 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
+public class DropZone : MonoBehaviour, IDropHandler
 {
-    [SerializeField] private GameObject DropPreview;
-    [SerializeField] private GameObject DropAppearance;
     [SerializeField] private Transform dropTransform;
     private bool isDisabled;
 
@@ -17,19 +15,6 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
     private void Start()
     {
         isDisabled = false;
-    }
-
-    public void DisableDropZone()
-    {
-        isDisabled = true;
-        DropPreview.SetActive(false);
-        DropAppearance.SetActive(false);
-    }
-
-    public void EnableDropZone()
-    {
-        isDisabled = false;
-        DropAppearance.SetActive(true);
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -49,27 +34,5 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
                 OnCardComponentDropped.Invoke(cardComponent);
             }
         }
-        DropPreview.SetActive(false);
-    }
-
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        if (isDisabled)
-        {
-            return;
-        }
-        if (eventData.pointerDrag != null)
-        {
-            DropPreview.SetActive(true);
-        }
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        if (isDisabled)
-        {
-            return;
-        }
-        DropPreview.SetActive(false);
     }
 }

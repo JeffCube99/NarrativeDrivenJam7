@@ -4,20 +4,33 @@ using UnityEngine;
 
 public class CardGameManager : MonoBehaviour
 {
-    [SerializeField] private DropZone cardDropZone;
+    [SerializeField] private DropZoneAppearanceController dropZoneAppearanceController;
+    [SerializeField] private PlayerHandAppearanceController playerHandAppearanceController;
+    [SerializeField] private PlayerState playerState;
+    [SerializeField] private PlayerCardHandManager playerCardHandManager;
     private CardChoiceScene currentCardChoiceScene;
 
     private void Start()
     {
-        DisablePlayArea();
+        HidePlayArea();
+        AddCardsToPlayerHand();
+    }
+
+    private void AddCardsToPlayerHand()
+    {
+        foreach (Card card in playerState.cardsInHand)
+        {
+            GameObject cardObject = card.cardObjectPool.Instantiate(Vector3.zero, Quaternion.identity);
+            playerCardHandManager.AddCardToHand(cardObject);
+        }
     }
 
     public void OnCardPlayed(object data)
     {
         Card card = (Card)data;
-        DisablePlayArea();
         if (currentCardChoiceScene != null)
         {
+            HidePlayArea();
             currentCardChoiceScene.EndScene(card);
         }
     }
@@ -25,16 +38,18 @@ public class CardGameManager : MonoBehaviour
     public void OnCardChoiceSceneBegin(object data)
     {
         currentCardChoiceScene = (CardChoiceScene)data;
-        EnablePlayArea();
+        ShowPlayArea();
     }
 
-    private void EnablePlayArea()
+    private void HidePlayArea()
     {
-        cardDropZone.EnableDropZone();
+        dropZoneAppearanceController.HideDropZone();
+        playerHandAppearanceController.HidePlayerHand();
     }
 
-    private void DisablePlayArea()
+    private void ShowPlayArea()
     {
-        cardDropZone.DisableDropZone();
+        dropZoneAppearanceController.ShowDropZone();
+        playerHandAppearanceController.ShowPlayerHand();
     }
 }

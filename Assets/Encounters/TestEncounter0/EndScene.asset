@@ -22,3 +22,4 @@ MonoBehaviour:
       - No one messes with ya boi!
   conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
   nextScene: {fileID: 0}
+  closeDialogueBoxOnFinish: 1

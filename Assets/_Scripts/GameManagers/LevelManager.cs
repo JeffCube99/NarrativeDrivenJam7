@@ -8,6 +8,9 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        initialScene.StartScene();
+        if (initialScene != null)
+        {
+            initialScene.StartScene();
+        }
     }
 }
