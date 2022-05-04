@@ -47,6 +47,11 @@ ExportedObj/
 *.opendb
 *.VC.db
 
+#Art Backup Files
+*.png~
+*.kra~
+*.blend1
+
 # Unity3D generated meta files
 *.pidb.meta
 *.pdb.meta
