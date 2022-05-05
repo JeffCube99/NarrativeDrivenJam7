@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3460865455096211750}
   - component: {fileID: 3460865455096211751}
   - component: {fileID: 3460865455096211928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HilightedDropZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3460865455490672290}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DropZoneTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 3460865455763541133}
   - component: {fileID: 3460865455763541134}
   - component: {fileID: 2904439644475868375}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DropZoneDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,6 +191,9 @@ MonoBehaviour:
   OnCardComponentDropped:
     m_PersistentCalls:
       m_Calls: []
+  OnGameObjectDropped:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &2904439644475868375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,7 +218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3460865455991473193}
   - component: {fileID: 3985022299293405011}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DropZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,7 +274,7 @@ GameObject:
   - component: {fileID: 3460865456381902928}
   - component: {fileID: 3460865456381902929}
   - component: {fileID: 3460865456381902930}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: UnHilightedDropZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}

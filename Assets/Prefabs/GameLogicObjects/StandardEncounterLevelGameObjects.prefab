@@ -265,7 +265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3062768755790714669}
   m_Layer: 0
-  m_Name: StandardLevelGameObjects
+  m_Name: StandardEncounterLevelGameObjects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -477,6 +477,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3062768755790714669}
     m_Modifications:
+    - target: {fileID: 1137801426138351693, guid: d19b7007ff7370747886485bc30898c2, type: 3}
+      propertyPath: levelState
+      value: 
+      objectReference: {fileID: 11400000, guid: 81f2db5c56d5e5946a5d650035770507, type: 2}
     - target: {fileID: 8458586811167044412, guid: d19b7007ff7370747886485bc30898c2, type: 3}
       propertyPath: m_Name
       value: CardArea

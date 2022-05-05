@@ -8,6 +8,7 @@ public class CardGameManager : MonoBehaviour
     [SerializeField] private PlayerHandAppearanceController playerHandAppearanceController;
     [SerializeField] private PlayerState playerState;
     [SerializeField] private PlayerCardHandManager playerCardHandManager;
+    [SerializeField] private LevelState levelState;
     private CardChoiceScene currentCardChoiceScene;
 
     private void Start()
@@ -28,9 +29,11 @@ public class CardGameManager : MonoBehaviour
     public void OnCardPlayed(object data)
     {
         Card card = (Card)data;
+        playerState.RemoveCard(card);
         if (currentCardChoiceScene != null)
         {
             HidePlayArea();
+            levelState.AddCardRewards(currentCardChoiceScene.GenerateCardReward(card));
             currentCardChoiceScene.EndScene(card);
         }
     }

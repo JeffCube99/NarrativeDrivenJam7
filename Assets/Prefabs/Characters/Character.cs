@@ -10,4 +10,5 @@ public class Character : ScriptableObject
     public string characterName;
     [EventRef]
     public string characterSpeakingEvent = "";
+    public GameObject npcPrefab;
 }

@@ -118,7 +118,6 @@ public class SaveSystem : ScriptableObject
         {
             OnLoadError.Invoke($"Failed to load save data from file {saveFilePath}. The save file may be corrupted or out of date.");
             throw;
-            return null;
         }
     }
 

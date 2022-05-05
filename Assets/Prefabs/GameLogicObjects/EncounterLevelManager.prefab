@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7653905471447529531}
   - component: {fileID: 7653905471447529476}
   m_Layer: 0
-  m_Name: LevelManager
+  m_Name: EncounterLevelManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,3 +44,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialScene: {fileID: 0}
+  levelState: {fileID: 11400000, guid: 81f2db5c56d5e5946a5d650035770507, type: 2}
