@@ -17,6 +17,11 @@ public class PlayerCardHandManager : MonoBehaviour
         fullCardHolders = new List<GameObject>();
     }
 
+    public int GetNumberOfCardsInHand()
+    {
+        return fullCardHolders.Count;
+    }
+
     private void Update()
     {
         // remove card holders from fullCardHolders that are not holding cards.

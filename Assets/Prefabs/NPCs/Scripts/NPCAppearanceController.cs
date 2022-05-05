@@ -24,4 +24,9 @@ public class NPCAppearanceController : MonoBehaviour
             animator.SetBool("isTalking", false);
         }
     }
+
+    public void OnStartWalking()
+    {
+        animator.SetBool("isTalking", true);
+    }
 }

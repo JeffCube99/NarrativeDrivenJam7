@@ -20,5 +20,5 @@ MonoBehaviour:
       - You scoff off at the squirrel and move on with your journey.
       - You're sure he probably wouldn't habe been any use anyways.
   conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: b462f656bae56084c9c62222aaa964a2, type: 2}
   closeDialogueBoxOnFinish: 1

@@ -16,6 +16,11 @@ public class LevelState : ScriptableObject
         }
     }
 
+    public void AddCardReward(Card card)
+    {
+        cardsEarnedDuringEncounter.Add(card);
+    }
+
     public void ClearCardRewards()
     {
         cardsEarnedDuringEncounter = new List<Card>();

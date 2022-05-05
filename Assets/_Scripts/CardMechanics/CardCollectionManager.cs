@@ -12,6 +12,7 @@ public class CardCollectionManager : MonoBehaviour
     [SerializeField] private DropZoneAppearanceController dropZoneAppearanceController;
     [SerializeField] private PlayerHandAppearanceController playerHandAppearanceController;
     [SerializeField] private PlayerHandAppearanceController earnedHandAppearanceController;
+    [SerializeField] private int maximumCardOverride = -1;
     private List<GameObject> earnedCards;
 
     private void Start()
@@ -44,7 +45,12 @@ public class CardCollectionManager : MonoBehaviour
 
     private void CheckIfHandIsFull()
     {
-        if (playerState.cardsInHand.Count >= gameSettings.maximumCards)
+        int maxCards = gameSettings.maximumCards;
+        if (maximumCardOverride > 0)
+        {
+            maxCards = maximumCardOverride;
+        }
+        if (playerState.cardsInHand.Count >= maxCards)
         {
             OnHandFull();
         }

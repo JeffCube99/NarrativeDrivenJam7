@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f3d0c3e5f7a014d9ae97a95a3501f5, type: 3}
+  m_Name: Introduction_AddCardsToLevelReward
+  m_EditorClassIdentifier: 
+  actionCode: 
+  nextScene: {fileID: 11400000, guid: 99dee5a7591e8bc4a903839976f3854f, type: 2}
+  startNextSceneImmediately: 1
+  OnSceneStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 81f2db5c56d5e5946a5d650035770507, type: 2}
+        m_TargetAssemblyTypeName: LevelState, Assembly-CSharp
+        m_MethodName: AddCardReward
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 977f479f3f659ac4498f741feea79765, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Card, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 81f2db5c56d5e5946a5d650035770507, type: 2}
+        m_TargetAssemblyTypeName: LevelState, Assembly-CSharp
+        m_MethodName: AddCardReward
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 977f479f3f659ac4498f741feea79765, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Card, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 81f2db5c56d5e5946a5d650035770507, type: 2}
+        m_TargetAssemblyTypeName: LevelState, Assembly-CSharp
+        m_MethodName: AddCardReward
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 580d2e301ea5af74eb5eb5c9212d2128, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Card, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 81f2db5c56d5e5946a5d650035770507, type: 2}
+        m_TargetAssemblyTypeName: LevelState, Assembly-CSharp
+        m_MethodName: AddCardReward
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 580d2e301ea5af74eb5eb5c9212d2128, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Card, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 81f2db5c56d5e5946a5d650035770507, type: 2}
+        m_TargetAssemblyTypeName: LevelState, Assembly-CSharp
+        m_MethodName: AddCardReward
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: bcb57b8617a155541a4e9b22d9da25fb, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Card, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 81f2db5c56d5e5946a5d650035770507, type: 2}
+        m_TargetAssemblyTypeName: LevelState, Assembly-CSharp
+        m_MethodName: AddCardReward
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: bcb57b8617a155541a4e9b22d9da25fb, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Card, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 81f2db5c56d5e5946a5d650035770507, type: 2}
+        m_TargetAssemblyTypeName: LevelState, Assembly-CSharp
+        m_MethodName: AddCardReward
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: c692bf8e0f9363c4eaeb2112e8d61de3, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Card, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 81f2db5c56d5e5946a5d650035770507, type: 2}
+        m_TargetAssemblyTypeName: LevelState, Assembly-CSharp
+        m_MethodName: AddCardReward
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: c692bf8e0f9363c4eaeb2112e8d61de3, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Card, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
