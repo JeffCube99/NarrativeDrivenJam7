@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d869fedf5df8d8544aa8404012024b83, type: 3}
+  m_Name: Bear_Start_A_IK_3
+  m_EditorClassIdentifier: 
+  conversation:
+    dialogues:
+    - character: {fileID: 11400000, guid: 22d3221cc92dc9147832bc044e5c41f8, type: 2}
+      sentences:
+      - With some effort you and the others are able to free the traffic cone from
+        the bear's head.
+    - character: {fileID: 11400000, guid: 825fc7ed3b7b5fd47bc9f93000a98218, type: 2}
+      sentences:
+      - Thank you for your help frog. In return I will do my best to help you on
+        whatever journey you are pursuing.
+    - character: {fileID: 11400000, guid: 22d3221cc92dc9147832bc044e5c41f8, type: 2}
+      sentences:
+      - While the bear is freed the hawk is still upset at your behavior towards
+        his friend.
+    - character: {fileID: 11400000, guid: 929df1fee949c8543b27c32f01c2292c, type: 2}
+      sentences:
+      - I am glad you are safe Orsa, but this is as far as I go on this trek. I wish
+        you all the best of luck.
+    - character: {fileID: 11400000, guid: 22d3221cc92dc9147832bc044e5c41f8, type: 2}
+      sentences:
+      - You have gained one ally but lost one as well.
+  conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
+  nextScene: {fileID: 11400000, guid: 1fdc448b4333fd444aaf53d2ad611bdb, type: 2}
+  closeDialogueBoxOnFinish: 0

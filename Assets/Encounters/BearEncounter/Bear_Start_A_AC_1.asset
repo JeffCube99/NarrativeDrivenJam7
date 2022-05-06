@@ -9,22 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1457a7106a6457f46b7f447264ba4085, type: 3}
-  m_Name: SaveSystem
+  m_Script: {fileID: 11500000, guid: 75f3d0c3e5f7a014d9ae97a95a3501f5, type: 3}
+  m_Name: Bear_Start_A_AC_1
   m_EditorClassIdentifier: 
-  currentSaveFileName: SaveFile0
-  gameDataObjects:
-  - {fileID: 11400000, guid: 080ff87bd5512f645a8a68f9b3976cd0, type: 2}
-  - {fileID: 11400000, guid: 81f2db5c56d5e5946a5d650035770507, type: 2}
-  SAVE_DIRECTORY_PATH: C:/Users/jeffr/AppData/LocalLow/DefaultCompany/NarrativeDrivenJam7\saves
-  SAVE_FILE_EXTENSION: .save
-  OnSaveError:
-    m_PersistentCalls:
-      m_Calls: []
-  OnLoadError:
+  actionCode: HawkKillsFrog
+  nextScene: {fileID: 0}
+  startNextSceneImmediately: 1
+  OnSceneStart:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 43a1ca341d6ff9445b74c7d8ddd55e74, type: 2}
+      - m_Target: {fileID: 11400000, guid: 1c621f2a9d862a040b2681b82f9cd151, type: 2}
         m_TargetAssemblyTypeName: StringGameEvent, Assembly-CSharp
         m_MethodName: Raise
         m_Mode: 0

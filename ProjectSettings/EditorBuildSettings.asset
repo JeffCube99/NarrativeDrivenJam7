@@ -35,4 +35,19 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Scenes/Level_1.unity
     guid: 9f4b42fd46e23104b82b3f28cd81026f
+  - enabled: 1
+    path: Assets/_Scenes/BearEncounter.unity
+    guid: 381cb32209125e445931d460ba233108
+  - enabled: 1
+    path: Assets/_Scenes/BearPostEncounter.unity
+    guid: f8a5b86ce0cc6f444908889dd24df698
+  - enabled: 1
+    path: Assets/_Scenes/BeeEncounter.unity
+    guid: 8e94e1fb08e7ddc4d9f97f7d95e2383c
+  - enabled: 1
+    path: Assets/_Scenes/BeePostEncounter.unity
+    guid: 9dd523ee0871a73488262f2b40af67cd
+  - enabled: 1
+    path: Assets/_Scenes/PipeEncounter.unity
+    guid: 69b248a8dc6d43f429a009d12ab47f2c
   m_configObjects: {}
