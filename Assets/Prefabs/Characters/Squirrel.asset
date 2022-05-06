@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Squirrel
   m_EditorClassIdentifier: 
   characterSprite: {fileID: 21300000, guid: bac8d25fb5d7e3f4dae5bf93c2b0aefe, type: 3}
-  characterName: Scratch
+  characterName: Snappal
   characterSpeakingEvent: event:/sfx/squirrel_lines
   npcPrefab: {fileID: 3240737093142413757, guid: b1f65e5f31324a144b06dfbed5da736f, type: 3}

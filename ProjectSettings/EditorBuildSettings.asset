@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/JeffCubeTestScene3.unity
     guid: a7cea9f69a949f3478934cd98db4b673
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Scenes/Level_0.unity
     guid: b882d15a54d95554f9c9759fa6b6c608
   - enabled: 0

@@ -210,26 +210,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: StandardCompleteScreenGameObjects
       objectReference: {fileID: 0}
-    - target: {fileID: 3225895833468868978, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 3225895833468868978, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.53
-      objectReference: {fileID: 0}
-    - target: {fileID: 3225895833468868978, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9975944
-      objectReference: {fileID: 0}
-    - target: {fileID: 3225895833468868978, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.06932122
-      objectReference: {fileID: 0}
-    - target: {fileID: 3225895833468868978, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 7.95
-      objectReference: {fileID: 0}
     - target: {fileID: 8369744764013882505, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
       propertyPath: maximumCardOverride
       value: 4

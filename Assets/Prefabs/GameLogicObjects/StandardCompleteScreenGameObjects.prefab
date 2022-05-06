@@ -136,6 +136,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnStart:
     m_PersistentCalls:
+      m_Calls: []
+  OnDelayedStart:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: c86d626e87a3e8743a1f7eff80a87d7e, type: 2}
         m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
@@ -149,10 +152,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnDelayedStart:
-    m_PersistentCalls:
-      m_Calls: []
-  delay: 0
+  delay: 0.1
 --- !u!1 &3225895833188553162
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,13 +290,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3225895833468868981}
-  m_LocalRotation: {x: -0.017365206, y: 0, z: 0, w: 0.99984926}
-  m_LocalPosition: {x: 0.3, y: 2.34, z: -5.315405}
+  m_LocalRotation: {x: 0.034463175, y: 0.004011852, z: -0.00013834446, w: 0.99939793}
+  m_LocalPosition: {x: -0.18, y: 3.39, z: -6.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3225895833215630131}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -1.99, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 3.95, y: 0.46, z: 0}
 --- !u!20 &3225895833468868979
 Camera:
   m_ObjectHideFlags: 0

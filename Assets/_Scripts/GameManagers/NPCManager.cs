@@ -11,7 +11,11 @@ public class NPCManager : MonoBehaviour
     {
         for (int i = 0; i < playerState.partyMembers.Count; i++)
         {
-            Instantiate(playerState.partyMembers[i].npcPrefab, npcTransforms[i]);
+            GameObject npcPrefab = playerState.partyMembers[i].npcPrefab;
+            if (npcPrefab != null)
+            {
+                Instantiate(npcPrefab, npcTransforms[i]);
+            }
         }
     }
 }

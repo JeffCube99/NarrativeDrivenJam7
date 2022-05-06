@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1cc1865ac08b224c89d82049c6f2809, type: 3}
+  m_Name: Hedgehog
+  m_EditorClassIdentifier: 
+  characterSprite: {fileID: 21300000, guid: e4f0197324d37bc42a0c13ac7cb703e9, type: 3}
+  characterName: Climble
+  characterSpeakingEvent: event:/sfx/narrator_lines
+  npcPrefab: {fileID: 0}

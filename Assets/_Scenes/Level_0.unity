@@ -691,7 +691,11 @@ MonoBehaviour:
     | da.iosonor@gmail.com>),
 
     with Reserved Font Name Dogica Pixel. This Font
-    Software is licensed under the SIL Open Font License, Version 1.1.'
+    Software is licensed under the SIL Open Font License, Version 1.1.
+
+
+    UI pack:
+    RPG extension by Kenney Vleugels (www.kenney.nl), License (CC0), http://creativecommons.org/publicdomain/zero/1.0/'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 14acc7a7bb999404e889cab10d6a36ad, type: 2}
   m_sharedMaterial: {fileID: 3017505871884279960, guid: 14acc7a7bb999404e889cab10d6a36ad, type: 2}
