@@ -26,4 +26,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/DeerEncounter.unity
     guid: a7d89114e7098344f8ed2ff5db325d3b
+  - enabled: 1
+    path: Assets/_Scenes/DeerPostEncounter.unity
+    guid: 529944eb88523d74d88ae804dea1c8eb
+  - enabled: 1
+    path: Assets/_Scenes/HawkEncounter.unity
+    guid: 6691b037275787f46936f8375b52f93a
+  - enabled: 1
+    path: Assets/_Scenes/HawkPostEncounter.unity
+    guid: 23105858b6a42be4592658226b922120
   m_configObjects: {}
