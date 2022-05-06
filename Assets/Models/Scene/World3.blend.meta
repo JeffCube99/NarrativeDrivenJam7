@@ -1,12 +1,29 @@
 fileFormatVersion: 2
-guid: 1b6ea7a03d766964bb94451920f05eb3
+guid: 7a8ff02408c8e1946b6657198047567f
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable:
+  internalIDToNameTable: []
+  externalObjects:
   - first:
-      74: -623603649343465320
-    second: Scene
-  externalObjects: {}
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Flower
+    second: {fileID: 2100000, guid: 0db02c36993590c40bf773ecf36d079b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Flower_Orange
+    second: {fileID: 2100000, guid: 1824d99d99e3bcd40a0e148317462606, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grass
+    second: {fileID: 2100000, guid: 7218dfb939e2ab54db605a396f05c80e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PureBlack
+    second: {fileID: 2100000, guid: b45d1dae78aba2144b6f7af9985fed5f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
