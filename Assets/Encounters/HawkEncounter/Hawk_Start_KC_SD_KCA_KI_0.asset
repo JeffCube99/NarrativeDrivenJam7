@@ -10,14 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d869fedf5df8d8544aa8404012024b83, type: 3}
-  m_Name: Hawk_HawkKillsYou_1
+  m_Name: Hawk_Start_KC_SD_KCA_KI_0
   m_EditorClassIdentifier: 
   conversation:
     dialogues:
-    - character: {fileID: 11400000, guid: 22d3221cc92dc9147832bc044e5c41f8, type: 2}
+    - character: {fileID: 11400000, guid: a43ffaba8e4e9d4408f92605808bc758, type: 2}
       sentences:
-      - The hawk lunges at you and grabs you before flying off.
-      - The hope for your village is lost.
+      - We are going to gather the creatures of the forest and stop whatever is causing
+        the river to be sick!
+    - character: {fileID: 11400000, guid: 929df1fee949c8543b27c32f01c2292c, type: 2}
+      sentences:
+      - Ha. So selfless but so naive. I do wish you luck though.
   conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
-  nextScene: {fileID: 11400000, guid: 7d9f9c9047a44ce40a7b3d96165202e1, type: 2}
+  nextScene: {fileID: 11400000, guid: 2e656bcd11eec4244b6664dbc7c8d801, type: 2}
   closeDialogueBoxOnFinish: 0
