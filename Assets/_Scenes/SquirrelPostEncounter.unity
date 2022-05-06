@@ -187,6 +187,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2743820418434840058, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743820418434840058, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743820418434840058, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 22e551958b1a2ed47808f52a0d245098, type: 2}
+    - target: {fileID: 2743820418434840058, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743820418434840058, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743820418434840058, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneManagementUtilities, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743820418434840058, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: DeerEncounter
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743820418434840058, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3225895833215630131, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -235,37 +267,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: StandardCompleteScreenGameObjects
       objectReference: {fileID: 0}
-    - target: {fileID: 4975198142330220777, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
-      propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+    - target: {fileID: 8369744764013882505, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
+      propertyPath: maximumCardOverride
+      value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 4975198142330220777, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
-      propertyPath: OnDelayedStart.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4975198142330220777, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
-      propertyPath: OnDelayedStart.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4975198142330220777, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
-      propertyPath: OnDelayedStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 11400000, guid: c86d626e87a3e8743a1f7eff80a87d7e, type: 2}
-    - target: {fileID: 4975198142330220777, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
-      propertyPath: OnDelayedStart.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4975198142330220777, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
-      propertyPath: OnDelayedStart.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Raise
-      objectReference: {fileID: 0}
-    - target: {fileID: 4975198142330220777, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
-      propertyPath: OnDelayedStart.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GameEvent, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4975198142330220777, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
-      propertyPath: OnDelayedStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+    - target: {fileID: 9069725428355158359, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
+      propertyPath: maximumCardOverride
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}

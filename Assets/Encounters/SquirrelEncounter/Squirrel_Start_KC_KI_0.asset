@@ -18,11 +18,13 @@ MonoBehaviour:
       sentences:
       - I am on a journey to save my village! The water has become polluted and my
         people are sick. I seek to find the source of this disaster and fix it.
+    - character: {fileID: 11400000, guid: 22d3221cc92dc9147832bc044e5c41f8, type: 2}
+      sentences:
+      - The Squirrel seems intrigued by your story.
     - character: {fileID: 11400000, guid: da520a298ab134145a0bb513748c4dea, type: 2}
       sentences:
       - Oh yes! I've noticed some of the trees I've planted near the shore look more
         sick than they have been in the past.
-      - It would be great if we could fix whatever is happening.
   conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
   nextScene: {fileID: 11400000, guid: c821496e665336e4c8dd6cf09d22df4a, type: 2}
   closeDialogueBoxOnFinish: 0

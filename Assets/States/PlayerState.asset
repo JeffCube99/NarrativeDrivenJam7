@@ -16,8 +16,4 @@ MonoBehaviour:
   partyMembers:
   - {fileID: 11400000, guid: da520a298ab134145a0bb513748c4dea, type: 2}
   - {fileID: 11400000, guid: be835443f8b39e6488279d8cf0bdfc1f, type: 2}
-  - {fileID: 11400000, guid: 929df1fee949c8543b27c32f01c2292c, type: 2}
-  - {fileID: 11400000, guid: 825fc7ed3b7b5fd47bc9f93000a98218, type: 2}
-  - {fileID: 11400000, guid: 5e12f16a75864ba47aa3aee85b8fcf64, type: 2}
-  - {fileID: 11400000, guid: 72b4e823d52546f4c860890001ed085a, type: 2}
   stateSaveUtilities: {fileID: 11400000, guid: 46cae942a57dfd74b95966e524500295, type: 2}

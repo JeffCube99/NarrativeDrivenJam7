@@ -17,8 +17,11 @@ MonoBehaviour:
     - character: {fileID: 11400000, guid: 22d3221cc92dc9147832bc044e5c41f8, type: 2}
       sentences:
       - Suddenly you see a squirrel just a few yards in front of you.
-      - However the squirrel seems oblivious to your presence
-      - What will you do?
+      - However the squirrel seems oblivious to your presence.
+      - 'What will you do?
+
+        (Pick and drop one of your cards into the play
+        area).'
   conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
   nextScene: {fileID: 11400000, guid: b113c0f097deafe46a252af9b742e7d8, type: 2}
   closeDialogueBoxOnFinish: 0

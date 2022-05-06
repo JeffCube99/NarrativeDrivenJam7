@@ -19,14 +19,12 @@ MonoBehaviour:
       - Sorry, didn't mean to scare ya.
     - character: {fileID: 11400000, guid: da520a298ab134145a0bb513748c4dea, type: 2}
       sentences:
-      - 'Oh no worries. '
-      - What brings you out here?
-    - character: {fileID: 11400000, guid: a43ffaba8e4e9d4408f92605808bc758, type: 2}
-      sentences:
-      - I am on a quest to fix the polluted water.
+      - No worries haha... What brings you out here?
     - character: {fileID: 11400000, guid: 22d3221cc92dc9147832bc044e5c41f8, type: 2}
       sentences:
-      - The Squirrel Appears Intrigued.
+      - You tell the squirrel of your quest to restore the waters in the hope of
+        saving your village.
+      - The squirrel appears intrigued.
   conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
   nextScene: {fileID: 11400000, guid: 3820d4e68cc7cac4aa6de2a7cb0bf5d9, type: 2}
   closeDialogueBoxOnFinish: 0
