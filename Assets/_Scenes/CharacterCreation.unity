@@ -266,20 +266,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1821529331}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 176aaadcf566d9c44946880748bc86b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/music/soundscape_woods
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
+  OnStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: a410cfe6657687040b50283250afc743, type: 2}
+        m_TargetAssemblyTypeName: FMODSoundAsset, Assembly-CSharp
+        m_MethodName: PlayAudioAsMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnDelayedStart:
+    m_PersistentCalls:
+      m_Calls: []
+  delay: 0
 --- !u!4 &1821529333
 Transform:
   m_ObjectHideFlags: 0

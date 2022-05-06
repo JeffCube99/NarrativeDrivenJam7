@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a203ad3bea9609348891057acec44db4, type: 3}
   m_Name: master_FMODBusMixer
   m_EditorClassIdentifier: 
-  busPath: bus:/ui
+  busPath: bus:/

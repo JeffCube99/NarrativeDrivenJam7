@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1457a7106a6457f46b7f447264ba4085, type: 3}
   m_Name: SaveSystem
   m_EditorClassIdentifier: 
-  currentSaveFileName: SaveFile1
+  currentSaveFileName: Jeffcube0
   gameDataObjects:
-  - {fileID: 11400000, guid: cc35dc333b161d34b853db66dc39aaa4, type: 2}
-  SAVE_DIRECTORY_PATH: C:/Users/jeffr/AppData/LocalLow/DefaultCompany/Temp0\saves
+  - {fileID: 11400000, guid: 080ff87bd5512f645a8a68f9b3976cd0, type: 2}
+  - {fileID: 11400000, guid: 81f2db5c56d5e5946a5d650035770507, type: 2}
+  SAVE_DIRECTORY_PATH: C:/Users/jeffr/AppData/LocalLow/DefaultCompany/NarrativeDrivenJam7\saves
   SAVE_FILE_EXTENSION: .save
   OnSaveError:
     m_PersistentCalls:

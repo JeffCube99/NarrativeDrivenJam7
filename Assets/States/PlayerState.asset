@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceff74206e2d2a64298ca80c77d5ff5f, type: 3}
   m_Name: PlayerState
   m_EditorClassIdentifier: 
-  cardsInHand: []
+  cardsInHand:
+  - {fileID: 11400000, guid: bcb57b8617a155541a4e9b22d9da25fb, type: 2}
+  - {fileID: 11400000, guid: bcb57b8617a155541a4e9b22d9da25fb, type: 2}
+  - {fileID: 11400000, guid: 580d2e301ea5af74eb5eb5c9212d2128, type: 2}
+  - {fileID: 11400000, guid: 580d2e301ea5af74eb5eb5c9212d2128, type: 2}
   partyMembers: []
+  stateSaveUtilities: {fileID: 11400000, guid: 46cae942a57dfd74b95966e524500295, type: 2}

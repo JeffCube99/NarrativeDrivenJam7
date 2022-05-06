@@ -16,7 +16,7 @@ public class OnStartEvent : MonoBehaviour
 
     IEnumerator DelayedStart()
     {
-        yield return new WaitForFixedUpdate();
+        yield return new WaitForSeconds(delay);
         OnDelayedStart.Invoke();
     }
 }

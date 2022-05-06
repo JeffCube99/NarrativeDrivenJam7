@@ -95,6 +95,10 @@ public class SaveSystem : ScriptableObject
 
     public void SaveGame()
     {
+        if (currentSaveFileName == "")
+        {
+            return;
+        }
         SaveData saveData = CollectDataFromGameObjects();
         string saveFilePath = GeneratePathToSaveFile(currentSaveFileName);
         BinaryFormatter formatter = GetBinaryFormatter();
