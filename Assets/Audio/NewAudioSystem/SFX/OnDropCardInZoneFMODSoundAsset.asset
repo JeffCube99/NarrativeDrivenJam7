@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c8e356c1447b8f4aa10148456c34159, type: 3}
-  m_Name: OnMouseOverButtonFMODSoundAsset
+  m_Name: OnDropCardInZoneFMODSoundAsset
   m_EditorClassIdentifier: 
-  soundEvent: event:/ui_hover
+  soundEvent: event:/sfx/card_down
   emitterManager: {fileID: 11400000, guid: 49964f8bfd2f39d4a94a16aaedc7daeb, type: 2}

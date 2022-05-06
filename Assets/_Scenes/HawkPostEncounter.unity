@@ -213,7 +213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2743820418434840058, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: BearEncounter
+      value: Level0
       objectReference: {fileID: 0}
     - target: {fileID: 2743820418434840058, guid: ac21a55b8a623fe4dbe016f5b7cfb3c6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName

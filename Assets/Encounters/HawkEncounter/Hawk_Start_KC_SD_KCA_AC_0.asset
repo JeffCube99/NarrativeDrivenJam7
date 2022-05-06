@@ -16,11 +16,12 @@ MonoBehaviour:
     dialogues:
     - character: {fileID: 11400000, guid: a43ffaba8e4e9d4408f92605808bc758, type: 2}
       sentences:
-      - We are going to gather the creatures of the forest and stop whatever is causing
-        the river to be sick!
-    - character: {fileID: 11400000, guid: 929df1fee949c8543b27c32f01c2292c, type: 2}
+      - 'I may be just one frog, but you are also just one hawk hawk! It i our numbers
+        that make us strong. Strong enough to save the river and our homes. '
+      - 'Would you rather do nothing as the world dies around you? '
+    - character: {fileID: 11400000, guid: 22d3221cc92dc9147832bc044e5c41f8, type: 2}
       sentences:
-      - Ha. So selfless but so naive. I do wish you luck though.
+      - The hawk admires your attitude and agrees to join you.
   conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
-  nextScene: {fileID: 11400000, guid: 2e656bcd11eec4244b6664dbc7c8d801, type: 2}
+  nextScene: {fileID: 11400000, guid: 91119aac3884b38448d2037d5e49e6f7, type: 2}
   closeDialogueBoxOnFinish: 0

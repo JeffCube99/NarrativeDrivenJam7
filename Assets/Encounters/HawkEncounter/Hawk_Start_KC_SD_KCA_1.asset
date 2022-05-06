@@ -20,6 +20,6 @@ MonoBehaviour:
   - cardChoices:
     - {fileID: 11400000, guid: 977f479f3f659ac4498f741feea79765, type: 2}
     - {fileID: 11400000, guid: 580d2e301ea5af74eb5eb5c9212d2128, type: 2}
-    resultScene: {fileID: 0}
+    resultScene: {fileID: 11400000, guid: b6b958b5dc3d86b4e8649b4861f6dddf, type: 2}
   cardChoiceEvent: {fileID: 11400000, guid: 488f453ece3995545b85746c1cb927ec, type: 2}
   rewardSystemManger: {fileID: 11400000, guid: 3e6af6a95557a4144ad67d83864bd146, type: 2}

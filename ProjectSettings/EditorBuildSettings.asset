@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Scenes/Level_0.unity
+    guid: b882d15a54d95554f9c9759fa6b6c608
+  - enabled: 1
     path: Assets/_Scenes/Introduction.unity
     guid: af1056dd4bd4e62458f4de85e702482e
   - enabled: 1
@@ -18,12 +21,6 @@ EditorBuildSettings:
     path: Assets/_Scenes/SquirrelPostEncounter.unity
     guid: a7cea9f69a949f3478934cd98db4b673
   - enabled: 1
-    path: Assets/_Scenes/Level_0.unity
-    guid: b882d15a54d95554f9c9759fa6b6c608
-  - enabled: 0
-    path: Assets/_Scenes/Level_1.unity
-    guid: 9f4b42fd46e23104b82b3f28cd81026f
-  - enabled: 1
     path: Assets/_Scenes/DeerEncounter.unity
     guid: a7d89114e7098344f8ed2ff5db325d3b
   - enabled: 1
@@ -35,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/HawkPostEncounter.unity
     guid: 23105858b6a42be4592658226b922120
+  - enabled: 0
+    path: Assets/_Scenes/Level_1.unity
+    guid: 9f4b42fd46e23104b82b3f28cd81026f
   m_configObjects: {}
