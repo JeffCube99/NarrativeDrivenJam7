@@ -95,6 +95,10 @@ public class SaveSystem : ScriptableObject
 
     public void SaveGame()
     {
+        if (currentSaveFileName == "")
+        {
+            return;
+        }
         SaveData saveData = CollectDataFromGameObjects();
         string saveFilePath = GeneratePathToSaveFile(currentSaveFileName);
         BinaryFormatter formatter = GetBinaryFormatter();
@@ -118,7 +122,6 @@ public class SaveSystem : ScriptableObject
         {
             OnLoadError.Invoke($"Failed to load save data from file {saveFilePath}. The save file may be corrupted or out of date.");
             throw;
-            return null;
         }
     }
 

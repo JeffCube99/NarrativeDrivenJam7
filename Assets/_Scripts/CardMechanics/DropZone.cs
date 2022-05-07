@@ -11,6 +11,7 @@ public class DropZone : MonoBehaviour, IDropHandler
 
     public UnityEvent<Card> OnCardDropped;
     public UnityEvent<CardComponent> OnCardComponentDropped;
+    public UnityEvent<GameObject> OnGameObjectDropped;
 
     private void Start()
     {
@@ -27,11 +28,13 @@ public class DropZone : MonoBehaviour, IDropHandler
         if (draggable != null)
         {
             draggable.transform.SetParent(dropTransform);
+            Debug.Log("Setting transform to drop zone");
             CardComponent cardComponent = eventData.pointerDrag.GetComponent<CardComponent>();
             if (cardComponent != null)
             {
                 OnCardDropped.Invoke(cardComponent.card);
                 OnCardComponentDropped.Invoke(cardComponent);
+                OnGameObjectDropped.Invoke(cardComponent.gameObject);
             }
         }
     }

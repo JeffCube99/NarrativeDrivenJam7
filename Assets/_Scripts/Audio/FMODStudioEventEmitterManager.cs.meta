@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: c7a4157de58fcb74bacde92b851bc507
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - musicStudioEventEmitterPrefab: {fileID: 1726349899164714996, guid: 9eece73a9b2d59643bc63765f96a2cbf, type: 3}
+  - musicStudioEventEmitter: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

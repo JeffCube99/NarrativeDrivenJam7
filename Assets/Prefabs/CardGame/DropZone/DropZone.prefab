@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3460865455096211750}
   - component: {fileID: 3460865455096211751}
   - component: {fileID: 3460865455096211928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HilightedDropZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3460865455490672290}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DropZoneTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,8 @@ GameObject:
   - component: {fileID: 3460865455763541133}
   - component: {fileID: 3460865455763541134}
   - component: {fileID: 2904439644475868375}
-  m_Layer: 0
+  - component: {fileID: 4595173549385214417}
+  m_Layer: 6
   m_Name: DropZoneDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,6 +192,9 @@ MonoBehaviour:
   OnCardComponentDropped:
     m_PersistentCalls:
       m_Calls: []
+  OnGameObjectDropped:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &2904439644475868375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,6 +209,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropZoneHilightedImage: {fileID: 3460865455096211930}
   dropZoneAnimator: {fileID: 3985022299293405011}
+--- !u!114 &4595173549385214417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3460865455763541120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 6
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 2a867ee9621a2b94396fd4a12e81f594, type: 2}
+          m_TargetAssemblyTypeName: FMODSoundAsset, Assembly-CSharp
+          m_MethodName: PlayAudioAtAudioListener
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &3460865455991473195
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,7 +248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3460865455991473193}
   - component: {fileID: 3985022299293405011}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: DropZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,7 +304,7 @@ GameObject:
   - component: {fileID: 3460865456381902928}
   - component: {fileID: 3460865456381902929}
   - component: {fileID: 3460865456381902930}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: UnHilightedDropZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}

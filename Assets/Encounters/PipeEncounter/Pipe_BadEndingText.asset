@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d869fedf5df8d8544aa8404012024b83, type: 3}
+  m_Name: Pipe_BadEndingText
+  m_EditorClassIdentifier: 
+  conversation:
+    dialogues:
+    - character: {fileID: 11400000, guid: 22d3221cc92dc9147832bc044e5c41f8, type: 2}
+      sentences:
+      - 'Together, you and your allies are able to put together enough materials
+        to partially block the pipe. The blockage seems to hold with only some  leaks. '
+      - 'Still, a dreadful thought sets in, knowing that some humans put this pipe
+        here, it is likely the humans will come and unblock it. '
+      - Is this fight truly possible to win? Maybe. At least for now.
+  conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
+  nextScene: {fileID: 11400000, guid: 9953bf1c5ffa77c4bbad397123256d11, type: 2}
+  closeDialogueBoxOnFinish: 0

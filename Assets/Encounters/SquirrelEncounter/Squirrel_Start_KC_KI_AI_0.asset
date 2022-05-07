@@ -16,7 +16,7 @@ MonoBehaviour:
     dialogues:
     - character: {fileID: 11400000, guid: 22d3221cc92dc9147832bc044e5c41f8, type: 2}
       sentences:
-      - You believe the squirrel could prove to be a knoledgeable and helpful ally
+      - You believe the squirrel could prove to be a knoledgeable and helpful ally.
     - character: {fileID: 11400000, guid: a43ffaba8e4e9d4408f92605808bc758, type: 2}
       sentences:
       - From what I can tell the animals of the forest must act quickly or all will
@@ -25,5 +25,5 @@ MonoBehaviour:
       sentences:
       - Yes! Lets go!
   conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: e154fbc62e04a4744bfc347d4d5d4ad2, type: 2}
   closeDialogueBoxOnFinish: 1

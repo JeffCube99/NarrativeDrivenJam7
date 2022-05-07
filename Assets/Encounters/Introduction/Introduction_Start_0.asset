@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d869fedf5df8d8544aa8404012024b83, type: 3}
+  m_Name: Introduction_Start_0
+  m_EditorClassIdentifier: 
+  conversation:
+    dialogues:
+    - character: {fileID: 11400000, guid: 22d3221cc92dc9147832bc044e5c41f8, type: 2}
+      sentences:
+      - It hadn't been the first time tales were told of the distant wasted lands...
+      - But when the wretched waters reached our shores, when the skies began to
+        darken with poisonous clouds, the tales became all too real.
+      - 'With your friends sick and your family emaciated, you set off from your
+        home into unknown and hostile lands. '
+      - 'You carry with you the hopes and dreams of your people. To them you are
+        a hero, the last hope to save your kind. '
+      - The question is what kind of hero will you be?
+  conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
+  nextScene: {fileID: 11400000, guid: 4df5fa6a440d68243af5c32901ab99c4, type: 2}
+  closeDialogueBoxOnFinish: 0

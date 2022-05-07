@@ -23,5 +23,5 @@ MonoBehaviour:
       sentences:
       - The squirrel is inspired and decides to join you on your quest.
   conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: e154fbc62e04a4744bfc347d4d5d4ad2, type: 2}
   closeDialogueBoxOnFinish: 1

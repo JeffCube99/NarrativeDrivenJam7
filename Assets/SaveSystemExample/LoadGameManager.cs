@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.Linq;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class LoadGameManager : MonoBehaviour
 {
@@ -13,8 +14,7 @@ public class LoadGameManager : MonoBehaviour
     [SerializeField] private Transform loadGameToggles;
     [SerializeField] private ToggleGroup toggleGroup;
     [SerializeField] private TextMeshProUGUI loadErrorText;
-
-    public UnityEvent OnSuccessfulStartGame;
+    [SerializeField] private LevelState levelState;
 
     private void DisplaySavedGames()
     {
@@ -42,8 +42,13 @@ public class LoadGameManager : MonoBehaviour
         bool loadWasSuccessful = saveSystem.LoadGame(saveFileName);
         if (loadWasSuccessful)
         {
-            OnSuccessfulStartGame.Invoke();
+            OnSuccessfulLoad();
         }
+    }
+
+    private void OnSuccessfulLoad()
+    {
+        SceneManager.LoadScene(levelState.sceneName);
     }
 
     public void OnDeleteClicked()

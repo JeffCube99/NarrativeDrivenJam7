@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d869fedf5df8d8544aa8404012024b83, type: 3}
+  m_Name: Bear_Start_IKC_IA_0
+  m_EditorClassIdentifier: 
+  conversation:
+    dialogues:
+    - character: {fileID: 11400000, guid: 22d3221cc92dc9147832bc044e5c41f8, type: 2}
+      sentences:
+      - Now seeing the massive bear tower above you, you suddenly become very terrified.
+        Together a hawk and a bear would have no trouble eating you and your friends.
+    - character: {fileID: 11400000, guid: a43ffaba8e4e9d4408f92605808bc758, type: 2}
+      sentences:
+      - No thank you Bear. As you can see we are doing just fine by ourselves.
+    - character: {fileID: 11400000, guid: 22d3221cc92dc9147832bc044e5c41f8, type: 2}
+      sentences:
+      - The Bear shrugs, thanking you again before turning and walking off into the
+        forest.
+  conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
+  nextScene: {fileID: 11400000, guid: 8780751a44fc18544bcba40fca0c39ae, type: 2}
+  closeDialogueBoxOnFinish: 0

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d869fedf5df8d8544aa8404012024b83, type: 3}
+  m_Name: Bear_Start_IKC_KC_0
+  m_EditorClassIdentifier: 
+  conversation:
+    dialogues:
+    - character: {fileID: 11400000, guid: a43ffaba8e4e9d4408f92605808bc758, type: 2}
+      sentences:
+      - Yes! We are making our way up the river to stop the waste at its source.
+        Would you be able to help us?
+    - character: {fileID: 11400000, guid: 825fc7ed3b7b5fd47bc9f93000a98218, type: 2}
+      sentences:
+      - Of course! I got that can stuck on my head while hunting fish. If there is
+        anything i can do to get these things out of the river, I would be more than
+        happy to help!
+    - character: {fileID: 11400000, guid: 22d3221cc92dc9147832bc044e5c41f8, type: 2}
+      sentences:
+      - The bear joins your party.
+  conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
+  nextScene: {fileID: 11400000, guid: 3e9138b771bb71246925fc039c6b161c, type: 2}
+  closeDialogueBoxOnFinish: 0

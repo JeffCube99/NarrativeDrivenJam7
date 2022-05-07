@@ -14,21 +14,41 @@ public class CardChoiceScene : BaseScene
 
     public List<CardChoiceOutcome> possibleOutcomes;
     public CardChoiceSceneEvent cardChoiceEvent;
+    public RewardSystemManager rewardSystemManger;
 
     public override void StartScene()
     {
         cardChoiceEvent.Raise(this);
     }
 
-    public void EndScene(Card cardChoice)
+    private CardChoiceOutcome? GetOutcome(Card cardChoice)
     {
         foreach (CardChoiceOutcome outcome in possibleOutcomes)
         {
             if (outcome.cardChoices.Contains(cardChoice))
             {
-                outcome.resultScene.StartScene();
-                return;
+                return outcome;
             }
+        }
+        return null;
+    }
+
+    public List<Card> GenerateCardReward(Card cardChoice)
+    {
+        CardChoiceOutcome? outcome = GetOutcome(cardChoice);
+        if (outcome != null)
+        {
+            return rewardSystemManger.GenerateRewards(outcome?.cardChoices);
+        }
+        return new List<Card>();
+    }
+
+    public void EndScene(Card cardChoice)
+    {
+        CardChoiceOutcome? outcome = GetOutcome(cardChoice);
+        if (outcome != null)
+        {
+            outcome?.resultScene.StartScene();
         }
     }
 }

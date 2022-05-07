@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d869fedf5df8d8544aa8404012024b83, type: 3}
+  m_Name: Hawk_Start_KC_SD_KCA_AC_0
+  m_EditorClassIdentifier: 
+  conversation:
+    dialogues:
+    - character: {fileID: 11400000, guid: a43ffaba8e4e9d4408f92605808bc758, type: 2}
+      sentences:
+      - 'I may be just one frog, but you are also just one hawk hawk! It i our numbers
+        that make us strong. Strong enough to save the river and our homes. '
+      - 'Would you rather do nothing as the world dies around you? '
+    - character: {fileID: 11400000, guid: 22d3221cc92dc9147832bc044e5c41f8, type: 2}
+      sentences:
+      - The hawk admires your attitude and agrees to join you.
+  conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
+  nextScene: {fileID: 11400000, guid: 91119aac3884b38448d2037d5e49e6f7, type: 2}
+  closeDialogueBoxOnFinish: 0

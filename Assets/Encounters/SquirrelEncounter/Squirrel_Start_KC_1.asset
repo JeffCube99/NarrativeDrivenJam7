@@ -22,3 +22,4 @@ MonoBehaviour:
     - {fileID: 11400000, guid: bcb57b8617a155541a4e9b22d9da25fb, type: 2}
     resultScene: {fileID: 11400000, guid: 777aedb25864fb443b1576174ab5b03c, type: 2}
   cardChoiceEvent: {fileID: 11400000, guid: 488f453ece3995545b85746c1cb927ec, type: 2}
+  rewardSystemManger: {fileID: 11400000, guid: 3e6af6a95557a4144ad67d83864bd146, type: 2}

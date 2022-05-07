@@ -6,12 +6,48 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Scenes/JeffCubeTestScene2.unity
-    guid: 6c8f8831ffbddca4f94307c95af40848
-  - enabled: 0
     path: Assets/_Scenes/Level_0.unity
     guid: b882d15a54d95554f9c9759fa6b6c608
+  - enabled: 1
+    path: Assets/_Scenes/Introduction.unity
+    guid: af1056dd4bd4e62458f4de85e702482e
+  - enabled: 1
+    path: Assets/_Scenes/CharacterCreation.unity
+    guid: c09ea855908f20948a769ec22eb35f17
+  - enabled: 1
+    path: Assets/_Scenes/SquirrelEncounter.unity
+    guid: 6c8f8831ffbddca4f94307c95af40848
+  - enabled: 1
+    path: Assets/_Scenes/SquirrelPostEncounter.unity
+    guid: a7cea9f69a949f3478934cd98db4b673
+  - enabled: 1
+    path: Assets/_Scenes/DeerEncounter.unity
+    guid: a7d89114e7098344f8ed2ff5db325d3b
+  - enabled: 1
+    path: Assets/_Scenes/DeerPostEncounter.unity
+    guid: 529944eb88523d74d88ae804dea1c8eb
+  - enabled: 1
+    path: Assets/_Scenes/HawkEncounter.unity
+    guid: 6691b037275787f46936f8375b52f93a
+  - enabled: 1
+    path: Assets/_Scenes/HawkPostEncounter.unity
+    guid: 23105858b6a42be4592658226b922120
   - enabled: 0
     path: Assets/_Scenes/Level_1.unity
     guid: 9f4b42fd46e23104b82b3f28cd81026f
+  - enabled: 1
+    path: Assets/_Scenes/BearEncounter.unity
+    guid: 381cb32209125e445931d460ba233108
+  - enabled: 1
+    path: Assets/_Scenes/BearPostEncounter.unity
+    guid: f8a5b86ce0cc6f444908889dd24df698
+  - enabled: 1
+    path: Assets/_Scenes/BeeEncounter.unity
+    guid: 8e94e1fb08e7ddc4d9f97f7d95e2383c
+  - enabled: 1
+    path: Assets/_Scenes/BeePostEncounter.unity
+    guid: 9dd523ee0871a73488262f2b40af67cd
+  - enabled: 1
+    path: Assets/_Scenes/PipeEncounter.unity
+    guid: 69b248a8dc6d43f429a009d12ab47f2c
   m_configObjects: {}

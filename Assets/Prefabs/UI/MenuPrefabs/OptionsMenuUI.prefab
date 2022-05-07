@@ -509,25 +509,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 844517733507639808, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
+    - target: {fileID: 844517733507639935, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_MaxValue
+      value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 844517733507639808, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
+    - target: {fileID: 844517733507639935, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 30244d159f41a3c4fbaad0569e311edb, type: 2}
+    - target: {fileID: 844517733507639935, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: setBusLevel
       objectReference: {fileID: 0}
-    - target: {fileID: 844517733507639808, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 844517733507639808, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 844517733507639808, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
+    - target: {fileID: 844517733507639935, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FMODBusMixerManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2424305988446066981, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
       propertyPath: m_AnchorMax.y
@@ -573,25 +569,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2424305989139507008, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
+    - target: {fileID: 2424305989139507007, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: c06d106ccaa995b4a9bff834b766cea6, type: 2}
+    - target: {fileID: 2424305989139507007, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: setBusLevel
       objectReference: {fileID: 0}
-    - target: {fileID: 2424305989139507008, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2424305989139507008, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2424305989139507008, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2424305989139507008, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
+    - target: {fileID: 2424305989139507007, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FMODBusMixerManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2424305989212709401, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
       propertyPath: m_AnchorMax.x
@@ -613,6 +601,30 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2583863051625689329, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 30244d159f41a3c4fbaad0569e311edb, type: 2}
+    - target: {fileID: 2583863051625689329, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: setSliderValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2583863051625689329, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FMODBusMixerManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3959477699866502257, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: c06d106ccaa995b4a9bff834b766cea6, type: 2}
+    - target: {fileID: 3959477699866502257, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: setSliderValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3959477699866502257, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FMODBusMixerManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4508370384841542668, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -633,25 +645,45 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4508370384970133401, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
-      propertyPath: m_AnchorMax.y
+    - target: {fileID: 4508370384970133478, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508370384970133478, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4508370384970133401, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
+    - target: {fileID: 4508370384970133478, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: b3201b0145dd354408c9e273c3e5f4f2, type: 2}
+    - target: {fileID: 4508370384970133478, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 5ab64304e13c7924d8b96a343fbd008a, type: 2}
+    - target: {fileID: 4508370384970133478, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4508370384970133401, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
+    - target: {fileID: 4508370384970133478, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: setBusLevel
       objectReference: {fileID: 0}
-    - target: {fileID: 4508370384970133401, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
+    - target: {fileID: 4508370384970133478, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: setBusLevel
       objectReference: {fileID: 0}
-    - target: {fileID: 4508370384970133401, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
+    - target: {fileID: 4508370384970133478, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FMODBusMixerManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508370384970133478, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: FMODBusMixerManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508370384970133478, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4508370385255071430, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
       propertyPath: m_AnchorMax.x
@@ -699,25 +731,101 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5832149015134500310, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5832149015134500310, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5832149015134500310, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 707.58997
       objectReference: {fileID: 0}
     - target: {fileID: 5832149015134500310, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5832149015134500310, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 1081.385
       objectReference: {fileID: 0}
     - target: {fileID: 5832149015134500310, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5832149015134500313, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497967300714919995, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497967300714919995, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497967300714919995, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497967300714919995, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6497967300714919995, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253810443054811500, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 5ab64304e13c7924d8b96a343fbd008a, type: 2}
+    - target: {fileID: 7253810443054811500, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: setSliderValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253810443054811500, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: OnStart.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FMODBusMixerManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8000024926881054114, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8000024926881054114, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8000024926881054114, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8000024926881054114, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8000024926881054114, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8084493227203884411, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8084493227203884411, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8084493227203884411, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8084493227203884411, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8084493227203884411, guid: 03fc001d9ba513544a1493bd647c0e34, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}

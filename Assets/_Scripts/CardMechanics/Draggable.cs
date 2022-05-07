@@ -14,7 +14,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDra
     private float mouseDepth;
     private int defaultLayer;
     [SerializeField] private GameObject colliderGameObject;
-    private bool canBeDragged;
+    [SerializeField] private bool canBeDragged;
 
     [Range(0.1f, 1f)] [SerializeField] private float lerpSpeed;
     public UnityEvent<GameObject> OnObjectPickedUp;
@@ -23,12 +23,13 @@ public class Draggable : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDra
     private void ResetDraggable()
     {
         defaultLayer = colliderGameObject.layer;
-        EnableDrag();
+        // EnableDrag();
     }
 
-    private void Start()
+    private void Awake()
     {
         ResetDraggable();
+        EnableDrag();
     }
 
     private void OnEnable()

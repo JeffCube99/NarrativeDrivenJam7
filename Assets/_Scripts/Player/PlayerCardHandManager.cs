@@ -6,7 +6,7 @@ public class PlayerCardHandManager : MonoBehaviour
 {
     [SerializeField] private ObjectPool cardHolderObjectPool;
     [SerializeField] private int maxCards;
-    [Range(0.1f, Mathf.PI)] [SerializeField] private float maxAngle;
+    [Range(0.001f, Mathf.PI)] [SerializeField] private float maxAngle;
     [SerializeField] private float radius;
     [Range(0.1f, 1f)] [SerializeField] private float lerpSpeed;
 
@@ -15,6 +15,11 @@ public class PlayerCardHandManager : MonoBehaviour
     private void Awake()
     {
         fullCardHolders = new List<GameObject>();
+    }
+
+    public int GetNumberOfCardsInHand()
+    {
+        return fullCardHolders.Count;
     }
 
     private void Update()
@@ -33,14 +38,11 @@ public class PlayerCardHandManager : MonoBehaviour
 
     public void AddCardToHand(GameObject card)
     {
-        if (fullCardHolders.Count < maxCards)
-        {
-            GameObject cardHolder = cardHolderObjectPool.Instantiate(Vector3.zero, Quaternion.identity, transform);
-            card.transform.parent = cardHolder.transform;
-            card.transform.localPosition = Vector3.zero;
-            card.transform.localRotation = Quaternion.identity;
-            fullCardHolders.Add(cardHolder);
-        }
+        GameObject cardHolder = cardHolderObjectPool.Instantiate(Vector3.zero, Quaternion.identity, transform);
+        card.transform.parent = cardHolder.transform;
+        card.transform.localPosition = Vector3.zero;
+        card.transform.localRotation = Quaternion.identity;
+        fullCardHolders.Add(cardHolder);
     }
 
     private void SpreadOutHand()
@@ -51,10 +53,10 @@ public class PlayerCardHandManager : MonoBehaviour
         for (int i = 0; i < fullCardHolders.Count; i++)
         {
             float angle = ((i+1) * partialAngle / (numberOfCards+1)) + minAngle;
-            Vector3 newPosition = new Vector3(Mathf.Cos(angle) * radius, Mathf.Sin(angle) * radius - radius, 0) + transform.position;
-            fullCardHolders[i].transform.position = Vector3.Lerp(fullCardHolders[i].transform.position, newPosition, lerpSpeed);
+            Vector3 newPosition = new Vector3(Mathf.Cos(angle) * radius, Mathf.Sin(angle) * radius - radius, 0);
+            fullCardHolders[i].transform.localPosition = Vector3.Lerp(fullCardHolders[i].transform.localPosition, newPosition, lerpSpeed);
             Quaternion newRotation = Quaternion.Euler(0, 0, angle * Mathf.Rad2Deg - 90);
-            fullCardHolders[i].transform.rotation = Quaternion.Lerp(fullCardHolders[i].transform.rotation, newRotation, lerpSpeed); 
+            fullCardHolders[i].transform.localRotation = Quaternion.Lerp(fullCardHolders[i].transform.localRotation, newRotation, lerpSpeed); 
         }
     }
 }

@@ -85,7 +85,7 @@ public class DialogueAppearanceManager : MonoBehaviour
         dialogueText.text = "";
         char lastLetter = " "[0];
         char space = " "[0];
-        int soundsPerWord = 2;
+        int soundsPerWord = 1;
         int count = 0;
         foreach (char letter in sentence.ToCharArray())
         {

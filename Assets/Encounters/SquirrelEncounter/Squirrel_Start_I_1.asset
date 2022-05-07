@@ -16,7 +16,7 @@ MonoBehaviour:
     dialogues:
     - character: {fileID: 11400000, guid: 22d3221cc92dc9147832bc044e5c41f8, type: 2}
       sentences:
-      - Suprised by the sudden appearance of the squirrel, you decide to hop into
+      - Surprised by the sudden appearance of the squirrel, you decide to hop into
         a small shrub in order to survey the situation from a distance.
   conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
   nextScene: {fileID: 11400000, guid: 7b7d7925e51187a48a84ebd95487d55a, type: 2}

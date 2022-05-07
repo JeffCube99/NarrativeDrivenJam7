@@ -139,8 +139,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: e05082d50d204684a83246acdfd7b6c9, type: 2}
-          m_TargetAssemblyTypeName: SoundAsset, Assembly-CSharp
+        - m_Target: {fileID: 11400000, guid: fca29ec1416cfd741bbdfe4bf1caca3e, type: 2}
+          m_TargetAssemblyTypeName: FMODSoundAsset, Assembly-CSharp
           m_MethodName: PlayAudioAtAudioListener
           m_Mode: 1
           m_Arguments:
@@ -155,8 +155,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11400000, guid: 408fbcbd3edd2684194ab6f5274ee2b1, type: 2}
-          m_TargetAssemblyTypeName: SoundAsset, Assembly-CSharp
+        - m_Target: {fileID: 11400000, guid: 9aefecb9ce128104db13d4ba8c8bb721, type: 2}
+          m_TargetAssemblyTypeName: FMODSoundAsset, Assembly-CSharp
           m_MethodName: PlayAudioAtAudioListener
           m_Mode: 1
           m_Arguments:
