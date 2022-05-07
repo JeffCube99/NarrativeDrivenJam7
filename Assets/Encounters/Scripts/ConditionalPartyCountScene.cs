@@ -2,17 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ConditionalPartyCountScene : MonoBehaviour
+[CreateAssetMenu(fileName = "New ConditionalPartyCountScene", menuName = "ScriptableObjects/Scenes/ConditionalPartyCountScene")]
+public class ConditionalPartyCountScene : BaseScene
 {
-    // Start is called before the first frame update
-    void Start()
+    public PlayerState playerState;
+    public List<ConditionalCountOutcome> possibleOutcomes;
+    public BaseScene defaultOutcomeScene;
+
+    [System.Serializable]
+    public struct ConditionalCountOutcome
     {
-        
+        public int minPartyMembers;
+        public BaseScene resultScene;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void StartScene()
     {
-        
+        foreach (ConditionalCountOutcome outcome in possibleOutcomes)
+        {
+            if (playerState.partyMembers.Count >= outcome.minPartyMembers)
+            {
+                outcome.resultScene.StartScene();
+                return;
+            }
+        }
+        defaultOutcomeScene.StartScene();
     }
 }

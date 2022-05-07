@@ -13,7 +13,13 @@ MonoBehaviour:
   m_Name: Pipe_Start_0
   m_EditorClassIdentifier: 
   conversation:
-    dialogues: []
+    dialogues:
+    - character: {fileID: 11400000, guid: 22d3221cc92dc9147832bc044e5c41f8, type: 2}
+      sentences:
+      - 'After a long journey you come face to face with the source of the pollution.
+        A massive pipe dumping all of its waste into the river. '
+      - In order to save your village and countless others you must find a way to
+        block the pipe.
   conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 84729c09391b9e7488839a99c6ffe9e7, type: 2}
   closeDialogueBoxOnFinish: 0

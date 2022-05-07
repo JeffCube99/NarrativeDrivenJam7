@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d869fedf5df8d8544aa8404012024b83, type: 3}
+  m_Name: Pipe_OkEndingText
+  m_EditorClassIdentifier: 
+  conversation:
+    dialogues:
+    - character: {fileID: 11400000, guid: 22d3221cc92dc9147832bc044e5c41f8, type: 2}
+      sentences:
+      - Together, you and your allies are able to block up the pipe. There are still
+        some leaks, but you are confident that your team's work will disable the
+        pipe for quite some time.
+      - Hopefully the blockage will last long enough to give the river time to heal.
+        In the meantime maybe you can gather enough allies to plug the pipe for good!
+  conversationEvent: {fileID: 11400000, guid: b9f9ca1ad3ded6e46b0a7d819dd1fd85, type: 2}
+  nextScene: {fileID: 11400000, guid: a4134fa12b7e2bd46aaf492f0de4d933, type: 2}
+  closeDialogueBoxOnFinish: 0
